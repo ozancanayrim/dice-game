@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(0, 0, 0, 0.392);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    position: relative;
+}
+
+.btn{
+    width: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+}
+
+h1{
+    text-align: center;   
+}
+
+h2{
+    color: brown;
+    font-weight: bolder;
+}
+
+div{
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: coral;
+    border: 2px solid coral;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
