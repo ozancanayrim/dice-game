@@ -1,0 +1,29 @@
+let dice = document.querySelector("button")
+let result = document.querySelector("h2")
+let diceDiv1 = document.querySelector("#dice-1")
+let diceDiv2 = document.querySelector("#dice-2")
+let randomNumber1 = Math.floor(Math.random() * 6) + 1
+let randomNumber2 = Math.floor(Math.random() * 6) + 1
+
+
+dice.addEventListener("click", () => {
+    selectImg()
+    whoWins()
+})
+
+
+function selectImg(){
+    diceDiv1.setAttribute(`src`, `pics/dice${randomNumber1}.png`)
+    diceDiv2.setAttribute(`src`, `pics/dice${randomNumber2}.png`)
+}
+
+
+function whoWins(){
+    if(randomNumber1 > randomNumber2){
+        result.innerHTML = "<em>Player 1 Wins!</em>" 
+    }else if(randomNumber2 > randomNumber1){
+        result.innerHTML = "<em>Player 2 Wins!</em>" 
+    }else{
+        result.innerHTML = "<em>Draw!</em>" 
+    }
+}
